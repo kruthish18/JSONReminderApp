@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reminders App</title>
+  <link rel="stylesheet" href="dist/main.css" />
+</head>
+
+<body>
+  <h1>Reminders App</h1>
+
+  <div class="reminders-container">
+    <!-- Reminder items will be added dynamically -->
+  </div>
+
+  <button class="add-btn" onclick="showAddReminder()">Add a New Reminder</button>
+
+  <div class="add-reminder-form" style="display: none">
+    <h2>Add Reminder</h2>
+    <form>
+      <label for="name">Title:</label>
+      <input type="text" id="name" name="name" class="name-input" />
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" class="details-input"></textarea>
+
+      <label for="time">Time:</label>
+      <span class="time-span"><input type="datetime-local" id="time" name="time" class="time-input" /></span>
+
+      <button type="submit" id="submit-btn" onclick="addNewReminderObject()">Add</button>
+      <button type="button" id="cancel-btn" onclick="closeReminder()">Cancel</button>
+    </form>
+
+    <div class="display-error">
+      <p class="display-errormsg"></p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

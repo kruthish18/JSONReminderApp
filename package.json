@@ -1,0 +1,22 @@
+{
+  "name": "assignment-6-kruthihegde18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "./node_modules/.bin/sass   styles/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info-6150-spring-2023/assignment-6-kruthihegde18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info-6150-spring-2023/assignment-6-kruthihegde18/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info-6150-spring-2023/assignment-6-kruthihegde18#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}
